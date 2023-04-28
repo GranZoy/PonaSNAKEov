@@ -1,11 +1,10 @@
 import pygame
-from global_names import width, high, block_size
+from global_names import width, high
 from class_program import Program
 
+'''Инициализация библиотеки pygame и запуск программы'''
 pygame.init()
 screen = pygame.display.set_mode((width, high))
-font = pygame.font.Font(None, block_size * 16 // 10)
-clock = pygame.time.Clock()
 program = Program(screen)
 program.Start()
 pygame.quit()

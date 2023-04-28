@@ -3,6 +3,14 @@ from global_names import *
 
 
 def DrawLandscape(screen, colors, land_is_transparent):
+    """
+    Отрисовываем ландшафт
+
+    :param screen: Экран для отрисовки
+    :param colors: list((int, int, int)) = [land_color, edge_color, line_color] - список с цветами,
+                   в которые нужно покрасить соответственно поле, края и разделяющии линии
+    :param land_is_transparent: bool - Нужно ли рисовать поле прозрачным
+    """
     if not land_is_transparent:
         screen.fill(colors[0])
     edge = [pygame.Rect(0, 0, block_size, high), pygame.Rect(0, 0, width, block_size),

@@ -1,6 +1,8 @@
 width = 525
 high = 425
 block_size = 25
+medium = [width // 2, high // 2]
+half_block = block_size // 2
 levels_cnt = 5
 
 white = (255, 255, 255)

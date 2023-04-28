@@ -5,6 +5,12 @@ from rects_functions import RandomRect
 
 class Bonus:
     def __init__(self, snake, bonus_type):
+        """
+        Создание бонуса
+
+        :param snake: list(PythonSnake) - змейка и ее куски
+        :param bonus_type: str - строка типа бонуса (pie, apple, peach, ice)
+        """
         self.rect = RandomRect()
         not_in_snake = True
         for i in range(len(snake)):
@@ -20,4 +26,9 @@ class Bonus:
         self.image.set_colorkey(white)
 
     def Draw(self, screen):
+        """
+        Рисует бонус
+
+        :param screen: экран для отрисовки
+        """
         screen.blit(self.image, self.rect)
