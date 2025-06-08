@@ -1,7 +1,7 @@
 # Snake Game (dedicated to the internet meme Evgeny Ponasenkov)
 
 This project is available in:
-- [Русский] https://github.com/GranZoy/PonaSNAKEov/blob/main/README.ru.md
+- [Русский] https://github.com/GranZoy/PonaSNAKEov/blob/master/README.ru.md
 
 Hello! I present to you an implementation of the classic Snake game. It includes sound effects, so you may want to turn up your volume :)
 
