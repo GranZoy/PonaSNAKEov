@@ -1,75 +1,78 @@
-# Игра Змейка
+# Snake Game (dedicated to the internet meme Evgeny Ponasenkov)
 
-Добрый день! Представляю вам реализацию известной игры змейка. В ней есть звуковое сопровождение, поэтому можете прибавить громкость:)
+This project is available in:
+- [Русский] https://github.com/GranZoy/PonaSNAKEov/blob/master/README.ru.md
 
-## Установка
+Hello! I present to you an implementation of the classic Snake game. It includes sound effects, so you may want to turn up your volume :)
 
-Перед запуском игры вам нужно установить Python 3 и библиотеку pygame на ваш компьютер. Последнее можно сделать командой
+## Installation
+
+Before launching the game, you need to install Python 3 and the pygame library on your computer. The latter can be installed with the command:
 ```
 pip install pygame
 ```
 
-## Запуск
+## Launching
 
-Запустить игру можно командой
+You can start the game by running this command in your terminal:
 ```
 python.exe .\main.py
 ```
-через терминал.
 
-Для выхода из игры нажмите на крестик в правом верхнем углу окна.
+To exit the game, click the cross in the top right corner of the window.
 
-## Как играть
+## How to Play
 
-### Меню
+### Menu
 
-После запуска игры вы попадаете в этот раздел.
+After launching the game, you'll enter this section.
 
-Слева вас есть возможность выбрать уровень игры, дизайн поля, цвет змейки и вид еды, нажав на кнопки 
+On the left, you can select the game level, field design, snake color, and food appearance by clicking the buttons:
 ```
 level, landscape, color, food
 ```
-соответственно.
 
-Справа вы видите ваш луший результат на уровнях.
+On the right, you'll see your high scores for each level.
 
-В центре вы можете запустить игру, нажав на кнопку 
+In the center, you can start the game by clicking the button:
 ```
 Play
 ```
 
-### Игра
+### Gameplay
 
-Игра представляет из себя перемещающуюся по экрану змейку, которая ест пишу, чтобы расти, и умирает, если врезается в собственное тело или стены.
+The game features a snake that moves around the screen, eating food to grow longer, and dies if it collides with its own body or walls.
 
-Вы можете лишь контролировать направление движения змейки, меняя его при помощи клавиш 
+You can only control the snake's movement direction using the arrow keys:
 ```
-ВПРАВО, ВЛЕВО, ВВЕРХ, ВНИЗ
+RIGHT, LEFT, UP, DOWN
 ```
 
-На первых двух уровнях змейка не умирает от столкновения со стенами, а появляется на другой стороне поля.
+On the first two levels, the snake doesn't die when hitting walls but instead appears on the opposite side of the field.
 
-После того, как змейка съест пищу, она немного ускорится. Также с некоторой верятностью на поле появится лёд, съев который, змейка замедлится.
+After the snake eats food, it will speed up slightly. There's also a chance that ice will appear on the field - eating it will slow the snake down.
 
-Вы можете завершить игру и переместиться в меню, нажав на клавишу 
+You can end the game and return to the menu by pressing the:
 ```
 ESCAPE
 ```
+key.
 
-### Читерство
+### Cheats
 
-В игре предусмотрены чит-коды, которые можно будет испоьзовать после одновременного зажатия букв слова 
+The game includes cheat codes that can be activated after simultaneously holding down the letters:
 ```
 C+H+E+A+T
 ```
-на клавиатуре (это нужно сделать в меню).
+on your keyboard (this must be done in the menu).
 
-Далее в игре вы можете зажать комбинации
+Then during gameplay, you can hold these combinations:
 ```
 G, S+D, W+U, W+A
 ```
-и соответственно змейка вырастет, замедлится, сможет проходить сквозь стены, не сможет проходить сквозь стены (последний две комбинации ничего не меняют на первых 2-х уровнях).
+to respectively: make the snake grow, slow it down, enable wall-passing, or disable wall-passing (the last two combinations don't affect the first two levels).
 
-### Пасхалки
+### Easter Eggs
 
-Если ваш лучший резултат на всех уровнях будет равен 8, то вы откроете пасхалку.
+If your high score on all levels reaches 8, you'll unlock an easter egg.
+```
