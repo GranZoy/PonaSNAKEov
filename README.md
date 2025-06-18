@@ -75,4 +75,4 @@ to respectively: make the snake grow, slow it down, enable wall-passing, or disa
 ### Easter Eggs
 
 If your high score on all levels reaches 8, you'll unlock an easter egg.
-```
+
